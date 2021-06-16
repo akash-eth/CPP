@@ -1,4 +1,5 @@
 #include<iostream>
+#include<math.h>
 using namespace std;
 
 int main() {
@@ -6,18 +7,20 @@ int main() {
     int n;
     cin >> n;
 
-    int rev = 0;
+    int sum=0;
+    int originlaN = n;
     while(n>0) {
         int rem = n%10;
-        rev = rev*10 + rem;
+        sum += pow(rem, 3);
         n = n/10;
     }
-    if(n == rev) {
-        cout  << "Armstrong";
+    if(sum == originlaN) {
+        cout << "Armstrong";
     }
     else {
-        cout << "Not an armstrong number";
+        cout << "Not an armstrong";
     }
+    
 
     return 0;
 }
