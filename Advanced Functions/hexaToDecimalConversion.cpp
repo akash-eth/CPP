@@ -5,7 +5,7 @@ int convert(string n) {
     int ans = 0;
     int x = 1;
     int si = n.size();
-    for(int i=1; i<=si; i++) {
+    for(int i=si-1; i>=0; i--) {
         if(n[i] >= '0' && n[i] <= '9') {
             ans += x*(n[i] - '0');
         }
