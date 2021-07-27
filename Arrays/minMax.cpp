@@ -15,13 +15,17 @@ int main() {
     int maxNo = INT_MIN;
 
     for(int i=0; i<n; i++) {
-        if(array[i] > maxNo) {
-            maxNo = array[i];
-        }
-        if(array[i] < minNo) {
-            minNo = array[i];
-        }
-    }
+        /*
+            if(array[i] > maxNo) {
+                maxNo = array[i];
+            }
+            if(array[i] < minNo) {
+                minNo = array[i];
+            }
+        */
+       maxNo = max(array[i], maxNo);
+       minNo = min(array[i], minNo);
+   }
 
     cout << minNo << " " << maxNo << endl;
     
