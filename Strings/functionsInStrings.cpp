@@ -60,7 +60,7 @@ int main() {
     // string s1 = "akashbhardwaj";
     // cout << s1.find("bhar");
     
-    // // insert function !!
+    // // insert function !!.
     // // arg1: index no. on which you want to insert, arg2: string you want to insert
     // string s1 = "akashbhardwaj";
     // s1.insert(5, "ji");
