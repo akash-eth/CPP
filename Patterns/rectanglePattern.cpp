@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     
-    // rows and cols will the define the hight and width of the triangle
+    // rows and cols will the define the hight and width of the rectangle
     int row, col;
     cin>>row>>col;
 
